@@ -62,7 +62,7 @@ public class MyService extends Service implements OnTouchListener {
         touchLayout.setBackgroundColor(Color.GRAY);
         touchLayout.setOrientation(LinearLayout.VERTICAL);
         touchLayout.setOnTouchListener(this);
-        width=60;
+        width=40;
         height=60;
         mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
 
@@ -106,7 +106,7 @@ public class MyService extends Service implements OnTouchListener {
                 System.out.println("Screen touched");
                // Toast.makeText(getApplicationContext(), "Screen Touched", Toast.LENGTH_SHORT).show();
 
-                if(width==60 && width==60)
+                if(width==40 && height==60)
                 {
                     width=510;height=510;
                     touchLayout.setBackgroundColor(Color.CYAN);
@@ -170,7 +170,7 @@ public class MyService extends Service implements OnTouchListener {
             touchLayout.removeView(editText);
             touchLayout.removeView(save);
             touchLayout.removeView(cancel);
-            width=60;height=60;
+            width=40;height=60;
             touchLayout.setBackgroundColor(Color.GREEN);
             WindowManager.LayoutParams mParams = new WindowManager.LayoutParams(width,height, WindowManager.LayoutParams.TYPE_TOAST, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, PixelFormat.TRANSLUCENT);
             mParams.gravity = Gravity.LEFT | Gravity.TOP;
